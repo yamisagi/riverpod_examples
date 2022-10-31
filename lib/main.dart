@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:riverpod_examples/basics/basics_provider.dart';
+import 'package:riverpod_examples/constant/const.dart';
 
 // The ProviderScope is the root of the application.
 // It is used to provide providers to the entire application.
@@ -18,12 +18,17 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      routes: Constants.routesList.asMap().map(
+            (key, value) => MapEntry(
+              value['route'],
+              (context) => value['page'],
+            ),
+          ),
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(
         useMaterial3: true,
       ),
       title: 'Riverpod Examples',
-      home: const HomePage(),
     );
   }
 }

@@ -61,7 +61,7 @@ In this repository, I will add [Riverpod](https://pub.dev/packages/riverpod) exa
 ## Roadmap
 
 
-  - I will update this later
+  - [x] Basic Provider Example Added [Basic Provider Example](/lib/basics/basics_provider.dart)
 
 
 

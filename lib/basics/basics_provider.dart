@@ -6,8 +6,8 @@ final dateTimeProvider = Provider<DateTime>((ref) {
   return DateTime.now();
 });
 
-class HomePage extends ConsumerWidget {
-  const HomePage({super.key});
+class BasicProviderExample extends ConsumerWidget {
+  const BasicProviderExample({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -21,7 +21,10 @@ class HomePage extends ConsumerWidget {
         title: const Text('Riverpod Examples'),
       ),
       body: Center(
-        child: Text(dateTime.toIso8601String()),
+        child: Text(
+          dateTime.toIso8601String(),
+          style: Theme.of(context).textTheme.headline4,
+        ),
       ),
     );
   }
