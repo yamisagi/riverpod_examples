@@ -11,10 +11,10 @@ class HomePage extends StatelessWidget {
   ) {
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
         title: const Text('Riverpod Examples'),
       ),
       body: ListView.builder(
+        physics: const BouncingScrollPhysics(),
         itemCount: Constants.routesList.length,
         itemBuilder: (context, index) {
           final route = Constants.routesList[index];

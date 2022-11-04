@@ -13,13 +13,16 @@ class RouterButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      leading: const Icon(Icons.ads_click_outlined),
-      title: Text(title),
-      subtitle: Text(subtitle),
-      onTap: () {
-        Navigator.of(context).pushNamed(routeName);
-      },
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 25),
+      child: ListTile(
+        leading: const Icon(Icons.ads_click_outlined),
+        title: Text(title),
+        subtitle: Text(subtitle),
+        onTap: () {
+          Navigator.of(context).pushNamed(routeName);
+        },
+      ),
     );
   }
 }

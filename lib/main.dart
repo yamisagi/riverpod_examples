@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverpod_examples/constant/const.dart';
+import 'package:riverpod_examples/theme/product_theme.dart';
 
 // The ProviderScope is the root of the application.
 // It is used to provide providers to the entire application.
@@ -25,9 +26,7 @@ class MainApp extends StatelessWidget {
             ),
           ),
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark(
-        useMaterial3: true,
-      ),
+      theme: ProductTheme.darkTheme,
       title: 'Riverpod Examples',
     );
   }

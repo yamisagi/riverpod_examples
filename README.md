@@ -62,6 +62,7 @@ In this repository, I will add [Riverpod](https://pub.dev/packages/riverpod) exa
 
 
   - [x] Basic Provider Example Added [Basic Provider Example](/lib/basics/basics_provider.dart)
+  - [x] Future Provider Example Added [Future Provider Example](/lib/basics/future_provider.dart)
 
 
 
