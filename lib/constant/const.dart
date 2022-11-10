@@ -1,5 +1,6 @@
 import 'package:riverpod_examples/basics/basics_provider.dart';
 import 'package:riverpod_examples/basics/future_provider.dart';
+import 'package:riverpod_examples/basics/stream_provider.dart';
 import 'package:riverpod_examples/pages/home_page.dart';
 
 class Constants {
@@ -15,7 +16,7 @@ class Constants {
     {
       'title': 'Basics Provider',
       'route': '/basics_provider',
-      'page':  const BasicProviderExample(),
+      'page': const BasicProviderExample(),
       'subtitle': 'This is the basics provider page returns DateTime',
     },
     {
@@ -25,5 +26,12 @@ class Constants {
       'subtitle':
           'This is the future provider page simulates network request and returns String',
     },
+    {
+      'title': 'Stream Provider',
+      'route': '/stream_provider',
+      'page': const StreamProviderExample(),
+      'subtitle':
+          'This is the stream provider page simulates network request and returns String',
+    }
   ];
 }
