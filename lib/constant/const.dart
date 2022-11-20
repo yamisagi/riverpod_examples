@@ -2,6 +2,7 @@ import 'package:riverpod_examples/basics/basics_provider.dart';
 import 'package:riverpod_examples/basics/future_provider.dart';
 import 'package:riverpod_examples/basics/stream_provider.dart';
 import 'package:riverpod_examples/pages/home_page.dart';
+import 'package:riverpod_examples/person_list_app/person_list.dart';
 
 class Constants {
   // This is the list of all the routes in the application.
@@ -32,6 +33,13 @@ class Constants {
       'page': const StreamProviderExample(),
       'subtitle':
           'This is the stream provider page simulates network request and returns String',
+    },
+    {
+      'title': 'Person List App',
+      'route': '/person_list_app',
+      'page': const PersonList(),
+      'subtitle':
+          'This is the person list app page with basic update functionality',
     }
   ];
 }
