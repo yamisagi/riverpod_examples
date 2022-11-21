@@ -1,6 +1,7 @@
 import 'package:riverpod_examples/basics/basics_provider.dart';
 import 'package:riverpod_examples/basics/future_provider.dart';
 import 'package:riverpod_examples/basics/stream_provider.dart';
+import 'package:riverpod_examples/fav_film_app/home.dart';
 import 'package:riverpod_examples/pages/home_page.dart';
 import 'package:riverpod_examples/person_list_app/person_list.dart';
 
@@ -40,6 +41,13 @@ class Constants {
       'page': const PersonList(),
       'subtitle':
           'This is the person list app page with basic update functionality',
+    },
+    {
+      'title': 'Fav Film App',
+      'route': '/fav_film_app',
+      'page': const FavFilmApp(),
+      'subtitle':
+          'This is the StateNotifierProvider page with basic update functionality',
     }
   ];
 }

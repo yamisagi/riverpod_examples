@@ -65,6 +65,7 @@ In this repository, I will add [Riverpod](https://pub.dev/packages/riverpod) exa
   - [x] Future Provider Example Added [Future Provider Example](/lib/basics/future_provider.dart)
   - [x] Stream Provider Example Added [Stream Provider Example](/lib/basics/stream_provider.dart)
   - [x] ChangeNotifier Provider Example Added [Person List App](/lib/person_list_app/)
+  - [x] StateNotifier & StateNotifierProvider Example Added [Favorite Film App](/lib/fav_film_app/)
 
 
 
